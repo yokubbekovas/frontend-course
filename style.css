@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #78ACCD;
+    background: linear-gradient(to right, #78ACCD, #A8D8E8);
     color: #333333;
     font-size: 1.5rem;
 }
@@ -26,7 +26,11 @@ ul {
     margin: 5rem auto;
     display: grid;
     grid-template-rows: 8rem auto 10rem;
+    border-radius: 15px;
     box-shadow: 0 1rem 2.5rem rgb(27, 64, 94);
+}
+.card:hover {
+    transform: translateY(-5px);
 }
 .card__header{
     padding: 0 1.25rem;
@@ -48,12 +52,19 @@ ul {
     height: 4rem;
 }
 .card__body--days li {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 0.5rem;
     flex: 1;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: #7D8994;
     margin: 0 1px;
+}
+.card__body--dates li:hover {
+    background-color: #DE6E46;
+    color: white;
 }
 .card__body--dates {
     display: grid;
@@ -124,3 +135,4 @@ li.circle {
     display: grid;
     place-items: center;
 }
+
