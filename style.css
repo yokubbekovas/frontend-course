@@ -52,7 +52,7 @@ ul {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: $gray;
+    color: #7D8994;
     margin: 0 1px;
 }
 .card__body--dates {
@@ -105,5 +105,22 @@ li.circle {
         background: #AE5989;
     }
 }
+.card__footer {
+    padding: 0 1.25rem; /* Стили из card__header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+    font-weight: bold;
 }
+.card__footer .add {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #DE6E46;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-top: 0.25rem;
+    display: grid;
+    place-items: center;
 }
